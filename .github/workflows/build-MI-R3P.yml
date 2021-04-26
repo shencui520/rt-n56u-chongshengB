@@ -33,7 +33,7 @@ jobs:
         ######自定义软件######
 
         #下载htop
-        wget https://github.com/htop-dev/htop/archive/refs/tags/3.0.2.tar.gz -O trunk/user/htop/3.0.2.tar.gz
+        #wget https://github.com/htop-dev/htop/archive/refs/tags/3.0.2.tar.gz -O trunk/user/htop/3.0.2.tar.gz
 
         #自定义smartdns版本
         #rm trunk/user/smartdns/smartdns-Release31.tar.gz
