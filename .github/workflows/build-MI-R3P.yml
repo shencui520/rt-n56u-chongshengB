@@ -32,26 +32,26 @@ jobs:
       run: |
         ######自定义软件######
         #自定义smartdns版本
-        #rm /opt/rt-n56u/trunk/user/smartdns/smartdns-Release31.tar.gz
-        #wget https://github.com/pymumu/smartdns/archive/Release33.tar.gz -O /opt/rt-n56u/trunk/user/smartdns/smartdns-Release33.tar.gz
-        #find /opt/rt-n56u/trunk/user/smartdns -name Makefile | xargs sed -i 's/smartdns-Release31/smartdns-Release33/g'
+        #rm trunk/user/smartdns/smartdns-Release31.tar.gz
+        #wget https://github.com/pymumu/smartdns/archive/Release33.tar.gz -O trunk/user/smartdns/smartdns-Release33.tar.gz
+        #find trunk/user/smartdns -name Makefile | xargs sed -i 's/smartdns-Release31/smartdns-Release33/g'
         
         #自定义最新smartdns版本
-        rm /opt/rt-n56u/trunk/user/smartdns/smartdns-Release31.tar.gz
-        wget https://github.com/pymumu/smartdns/archive/master.zip -O /opt/rt-n56u/trunk/user/smartdns/smartdns-master.zip
-        find /opt/rt-n56u/trunk/user/smartdns -name Makefile | xargs sed -i 's/smartdns-Release31/smartdns-master/g'
-        find /opt/rt-n56u/trunk/user/smartdns -name Makefile | xargs sed -i 's/tar zxf $(SRC_NAME).tar.gz/unzip $(SRC_NAME).zip/g'
+        rm trunk/user/smartdns/smartdns-Release31.tar.gz
+        wget https://github.com/pymumu/smartdns/archive/master.zip -O trunk/user/smartdns/smartdns-master.zip
+        find trunk/user/smartdns -name Makefile | xargs sed -i 's/smartdns-Release31/smartdns-master/g'
+        find trunk/user/smartdns -name Makefile | xargs sed -i 's/tar zxf $(SRC_NAME).tar.gz/unzip $(SRC_NAME).zip/g'
 
 
         #自定义网易云go版本
-        wget https://github.com/cnsilvan/UnblockNeteaseMusic/archive/refs/tags/0.2.10.tar.gz -O /opt/rt-n56u/trunk/user/unblockmusic/UnblockNeteaseMusic-0.2.10.tar.gz
-        find /opt/rt-n56u/trunk/user/unblockmusic -name Makefile | xargs sed -i 's/0.2.7/0.2.10/g'
-        find /opt/rt-n56u/trunk/user/unblockmusic -name Makefile | xargs sed -i 's#UnblockNeteaseMusic/archive#UnblockNeteaseMusic/archive/refs/tags#g'
+        wget https://github.com/cnsilvan/UnblockNeteaseMusic/archive/refs/tags/0.2.10.tar.gz -O trunk/user/unblockmusic/UnblockNeteaseMusic-0.2.10.tar.gz
+        find trunk/user/unblockmusic -name Makefile | xargs sed -i 's/0.2.7/0.2.10/g'
+        find trunk/user/unblockmusic -name Makefile | xargs sed -i 's#UnblockNeteaseMusic/archive#UnblockNeteaseMusic/archive/refs/tags#g'
 
         #自定义v2ray版本
-        #wget https://github.com/v2fly/v2ray-core/archive/refs/tags/v4.37.1.tar.gz -O /opt/rt-n56u/trunk/user/v2ray/v2ray-core-4.37.1.tar.gz
-        #find /opt/rt-n56u/trunk/user/v2ray -name Makefile | xargs sed -i 's/4.31.2/4.37.1/g'
-        #find /opt/rt-n56u/trunk/user/v2ray -name Makefile | xargs sed -i 's#https://codeload.github.com/v2ray/v2ray-core/tar.gz/v$(V2ray_VERSION)#https://github.com/v2fly/v2ray-core/archive/refs/tags/v$(V2ray_VERSION).tar.gz#g'
+        #wget https://github.com/v2fly/v2ray-core/archive/refs/tags/v4.37.1.tar.gz -O trunk/user/v2ray/v2ray-core-4.37.1.tar.gz
+        #find trunk/user/v2ray -name Makefile | xargs sed -i 's/4.31.2/4.37.1/g'
+        #find trunk/user/v2ray -name Makefile | xargs sed -i 's#https://codeload.github.com/v2ray/v2ray-core/tar.gz/v$(V2ray_VERSION)#https://github.com/v2fly/v2ray-core/archive/refs/tags/v$(V2ray_VERSION).tar.gz#g'
         
         ####################
 
