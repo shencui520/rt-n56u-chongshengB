@@ -31,6 +31,10 @@ jobs:
     - name: Clone source code
       run: |
         ######自定义软件######
+
+        #下载htop
+        wget https://github.com/htop-dev/htop/archive/refs/tags/3.0.2.tar.gz -O /opt/rt-n56u/trunk/user/htop/3.0.2.tar.gz
+
         #自定义smartdns版本
         #rm trunk/user/smartdns/smartdns-Release31.tar.gz
         #wget https://github.com/pymumu/smartdns/archive/Release33.tar.gz -O trunk/user/smartdns/smartdns-Release33.tar.gz
