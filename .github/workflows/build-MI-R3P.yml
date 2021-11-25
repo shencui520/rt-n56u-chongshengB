@@ -48,8 +48,8 @@ jobs:
 
 
         #自定义网易云go版本
-        wget https://github.com/cnsilvan/UnblockNeteaseMusic/archive/refs/tags/0.2.10.tar.gz -O trunk/user/unblockmusic/UnblockNeteaseMusic-0.2.10.tar.gz
-        find trunk/user/unblockmusic -name Makefile | xargs sed -i 's/0.2.7/0.2.10/g'
+        wget https://github.com/cnsilvan/UnblockNeteaseMusic/archive/refs/tags/0.2.13.tar.gz -O trunk/user/unblockmusic/UnblockNeteaseMusic-0.2.13.tar.gz
+        find trunk/user/unblockmusic -name Makefile | xargs sed -i 's/0.2.7/0.2.13/g'
         find trunk/user/unblockmusic -name Makefile | xargs sed -i 's#UnblockNeteaseMusic/archive#UnblockNeteaseMusic/archive/refs/tags#g'
 
         #自定义v2ray版本
